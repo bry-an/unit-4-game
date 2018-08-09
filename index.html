@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="assets/css/skeleton.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="utf-8" />
+    <title>Trout Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <div class="u-full-width">
+        <div class="mainContainer">
+            <div class="row">
+                <div id="header">
+                    <h1>
+                        Trout Collector
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div id="instructions">
+                    <p>You are given a random target number at the start of the game.</p>
+                    <p>Each of the characters has a secret value that can be used when the character is clicked.
+                        This value will be applied to your total score shown below. 
+                    </p>
+                    <p>To win, use the right characters in the right order to reach the target number exactly, without going
+                        over. Good luck!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="targetNumber">
+                </div>
+            <div id="userTotal"></div>
+            </div>
+            <div class = "row">
+                <div id = "status"></div>
+                <div id="wins"></div>
+                <div id="losses"></div>
+            </div>
+            <div class ="row">
+                <div id="characters">
+                    <img src = "assets/images/rainbow.jpg" data-val = "0" class = "charImage" id="char-rainbow" alt="rainbowCharacter"/>
+                    <img src = "assets/images/osprey.jpg" data-val = "0" class = "charImage" id="char-osprey" alt="ospreyCharacter"/>
+                    <img src = "assets/images/angler.jpg" data-val = "0" class = "charImage" id="char-angler" alt="anglerCharacter"/>
+                    <img src = "assets/images/chemPlant.jpg" data-val = "0" class = "charImage" id="char-plant" alt="ChemicalPlantCharacter"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.mainContainer {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  color: blue;
+}
+
+#characters {
+  display: block;
+}
+
+.charImage {
+  float: left;
+  border: 10px solid blue;
+  margin: 10px;
+}
+
+#targetNumber, #status, #wins, #losses, #userTotal {
+  font-size: 1.5em;
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

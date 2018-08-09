@@ -1,0 +1,58 @@
+TROUTQUEST
+
+Data structure:
+	global variables: userHp, assigned via character's profile
+
+	characters:Rainbow trout, brook trout, osprey, fisher, chemical factory. 
+
+	attributes: Health Points, attack power, counter attack power. 
+
+
+
+Theme: TroutQuest: Pick from Rainbow trout, brook trout, osprey, fisher, chemical factory.
+
+Overview:
+User selects characters, other characters move to enemies
+User selects enemy, enemy goes to arena. 
+User attacks enemy, enemy counter attacks. Repeat until someone dies. 
+If user successful, must attack other enemies. But users attack power greater. Repeat until either user dies or all enemies eliminated. 
+
+Maths:
+Attack power increases by itself each attack. 
+If Attack power is low, HP should be high and/or others' counter attacks must be low. 
+
+Attack or counter attack low = hp high. 
+
+Character's attack: baseAttack * n
+Health = Negative sum of (n * counterAttack) for each enemy 
+
+
+100 point system
+Chem Factory: weakest attack (10), strongest counter attack (45), strongest health(45)
+	Health: 200
+	Counter: 40
+	Attack: 5
+	
+Fisher: Medium attack (35), medium counter (35), decent health (30)
+	Health: 135
+	Counter: 31
+	Attack: 18
+
+Osprey: Strongest attack (60), low counter (20), low health (20)
+	Health: 89
+	Counter: 18
+	Attack: 30
+
+Rainbow: Decent attack (33), decent counter (34), decent health (33)
+	Health: 147
+	Counter: 30
+	Attack: 17
+
+Brook: attack (20), counter (40), health (40)
+	Health: 178
+	Counter: 36
+	Attack: 10
+
+Health total: 168
+Counter total: 189
+Attack Total: 143
